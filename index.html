@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charste="UTF-8"/>
+        <meta name="viewport" content = "width = device-width, initial-scale = 1.0"/>
+        <title>SBA 316 - The Document Object Model | Brief Builder | Brief.io</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+
+    </head>
+
+    <body>
+
+        <!-- Form Section -->
+        <section id="form-section">
+
+            <div class="builder-header">
+
+                <div class="logo-placeholder">Brief.io</div>
+            
+                <div class="builder-body">
+
+                    <h1 class="builder-title">Campaign Brief Builder</h1>
+                    <p class="builder-subtitle">Fill out the fields below to generate your campaign brief.</p>
+
+                    <form id="brief-form" novalidate>
+
+                        <!-- Project Info -->
+
+                        <div class="form-group-section">
+
+                            <h2 class="section-label" >Project Info</h2>
+
+                            <div class="form-group">
+
+                                <label for="project-name">Project Name</label>
+                                <input type="text" id="project-name" name="project-name" placeholder="e.g. Q3 Brand Awareness Campaign" required/>
+                                <span class="error-message" id="project-name-error"></span>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="project-type">Project Type</label>
+
+                                <select id="project-type" name="project-type" required>
+
+                                    <option value="">Select a type...</option>
+                                    <option value="campaign">Campaign</option>
+                                    <option value="brand-launch">Brand Launch</option>
+                                    <option value="product-launch">Product Launch</option>
+                                    <option value="content-series">Content Series</option>
+                                    <option value="event">Event</option>
+
+                                </select>
+
+                                <span class="error-message" id="project-type-error"></span>
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="timeline">Timeline</label>
+
+                                <select id="timeline" name="timeline" required>
+
+                                    <option value="">Select a timeline...</option>
+                                    <option value="">2 Weeks</option>
+                                    <option value="">1 Month</option>
+                                    <option value="">3 Months</option>
+                                    <option value="">6 Months</option>
+                                    
+                                </select>
+
+                                <span class="error-message" id="timeline-error"></span>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Audience Section -->
+
+                        <div class="form-group-section">
+
+                            <h2 class="section-label" >Audience</h2>
+
+                            <div class="form-group">
+
+                                <label for="target-audience">Target Audience</label>
+                                <input type="textarea" id="target-audience" name="target-audience" placeholder="Who your campaign is for. Demographics" required/>
+                                <span class="error-message" id="target-audience-error"></span>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="geographic-focus">Geographic Focus</label>
+                                <input type="text" id="geographic-focus" name="geographic-focus" placeholder="Targeting area: local, region, nationa, global." required/>
+                                <span class="error-message" id="geographic-focus-error"></span>
+
+                            </div>
+
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Form Output Section -->
+         <section is="output-section">
+
+         </section>
+
+         <script src="js/app.js"></script>
+
+    </body>
+
+
+</html>
