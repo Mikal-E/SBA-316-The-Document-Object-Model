@@ -2,6 +2,43 @@
 
 
 
+###### 
+
+##### **Project Overview**
+
+
+
+###### **Brief Builder**
+
+
+
+**Sections \& Fields** - 11 fields across 4 logical sections. Enough to generate a rich brief output. Sections are as follows:
+
+
+
+* Project Info: Project Name, Project Type (dropdown), Timeline (dropdown)
+* Audience: Target Audience (textarea), Geographic Focus (text)
+* Strategy: Objectives (textarea), Goals (textarea), Tone \& Voice (checkboxes)
+* Scope: Key Deliverables (checkboxes), Milestones (textarea), Additional Notes (textarea)
+
+
+
+**Output View**
+
+
+
+* Document-style formatted brief
+* Top left: Edit Brief + Regenerate Brief buttons (light grey background, burgundy text/border)
+* Top right: Card View button (burgundy background, light grey text) — placeholder element, present, styled, coding will be done post-SBA. 
+* Edit Brief pre-populates form and returns to form view
+* Regenerate reruns logic with same inputs
+
+
+
+##### **Assignment Overview**
+
+###### 
+
 ###### **Introduction**
 
 
@@ -55,6 +92,4 @@ Create your application locally, and initialize a local git repo. Make frequent 
 * Commit frequently to the git repository. **Weight** **5%**
 * Include a README file that contains a description of your application. **Weight** **2%**
 * Level of effort displayed in creativity, presentation, and user experience. **Weight** **5%**
-
-
 
