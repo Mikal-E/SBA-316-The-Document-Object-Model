@@ -87,7 +87,7 @@
                             <div class="form-group">
 
                                 <label for="target-audience">Target Audience</label>
-                                <input type="textarea" id="target-audience" name="target-audience" placeholder="Who your campaign is for. Demographics" required/>
+                                <input type="textarea" id="target-audience" name="target-audience" rows="4" placeholder="Who your campaign is for. Demographics" required/>
                                 <span class="error-message" id="target-audience-error"></span>
 
                             </div>
@@ -112,7 +112,7 @@
                             <div class="form-group">
 
                                 <label for="objectives">Objectives</label>
-                                <input type="textarea" id="objectives" name="objectives" placeholder="Purpose of campaign as it relates to overall goal." required/>
+                                <input type="textarea" id="objectives" name="objectives" rows="4" placeholder="Purpose of campaign as it relates to overall goal." required/>
                                 <span class="error-message" id="objectives-error"></span>
 
                             </div>
@@ -120,7 +120,7 @@
                             <div class="form-group">
 
                                 <label for="goals">Goals</label>
-                                <input type="textarea" id="goals" name="goals" placeholder="What you are trying to accomplish overall." required/>
+                                <input type="textarea" id="goals" name="goals" rows="4" placeholder="What you are trying to accomplish overall." required/>
                                 <span class="error-message" id="goals-error"></span>
 
                             </div>
@@ -189,7 +189,7 @@
                             <div class="form-group">
 
                                 <label for="milestones">Milestones</label>
-                                <input type="textarea" id="milestones" name="milestones" placeholder="1. Initiation: Key Events - Goal - 2. Planning:... 3. Execution:... 4. Closure:... ." required/>
+                                <input type="textarea" id="milestones" name="milestones" rows="5" placeholder="1. Initiation: Key Events - Goal - 2. Planning:... 3. Execution:... 4. Closure:... ." required/>
                                 <span class="error-message" id="milestones-error"></span>
 
                             </div>
@@ -197,7 +197,7 @@
                              <div class="form-group">
 
                                 <label for="additional-information">Additonal Information</label>
-                                <input type="textarea" id="additional-information" name="additional-information" placeholder="Optional: additonal information to provide for your brief."/>
+                                <input type="textarea" id="additional-information" name="additional-information" rows="3" placeholder="Optional: additonal information to provide for your brief."/>
                                 <span class="error-message" id="additional-information-error"></span>
 
                             </div>
@@ -216,6 +216,21 @@
 
         <!-- Form Output Section -->
          <section id="output-section">
+
+            <div class="output-actions">
+
+                <button class="regenerate-brief-button">Regenerate Brief</button>
+                <button class="edit-brief-button">Edit Brief</button>
+                
+                <button class="card-view-button">Card View</button>
+
+            </div>
+
+            <div class="output-content" id="output-content">
+
+
+
+            </div>
 
          </section>
 
