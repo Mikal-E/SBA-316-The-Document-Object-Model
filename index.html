@@ -3,7 +3,7 @@
 
     <head>
 
-        <meta charste="UTF-8"/>
+        <meta charset="UTF-8"/>
         <meta name="viewport" content = "width = device-width, initial-scale = 1.0"/>
         <title>SBA 316 - The Document Object Model | Brief Builder | Brief.io</title>
         <link rel="stylesheet" href="css/styles.css"/>
@@ -15,214 +15,222 @@
         <!-- Form Section -->
         <section id="form-section">
 
-            <div class="builder-header">
+            <div class="builder-wrapper">
 
-                <div class="logo-placeholder">Brief.io</div>
-            
-                <div class="builder-body">
+                <div class="builder-header">
 
-                    <h1 class="builder-title">Campaign Brief Builder</h1>
-                    <p class="builder-subtitle">Fill out the fields below to generate your campaign brief.</p>
-
-                    <form id="brief-form" novalidate>
-
-                        <!-- Project Info -->
-
-                        <div class="form-group-section">
-
-                            <h2 class="section-label" >Project Info</h2>
-
-                            <div class="form-group">
-
-                                <label for="project-name">Project Name</label>
-                                <input type="text" id="project-name" name="project-name" placeholder="e.g. Q3 Brand Awareness Campaign" required/>
-                                <span class="error-message" id="project-name-error"></span>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="project-type">Project Type</label>
-
-                                <select id="project-type" name="project-type" required>
-
-                                    <option value="">Select a type...</option>
-                                    <option value="campaign">Campaign</option>
-                                    <option value="brand-launch">Brand Launch</option>
-                                    <option value="product-launch">Product Launch</option>
-                                    <option value="content-series">Content Series</option>
-                                    <option value="event">Event</option>
-
-                                </select>
-
-                                <span class="error-message" id="project-type-error"></span>
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="timeline">Timeline</label>
-
-                                <select id="timeline" name="timeline" required>
-
-                                    <option value="">Select a timeline...</option>
-                                    <option value="">2 Weeks</option>
-                                    <option value="">1 Month</option>
-                                    <option value="">3 Months</option>
-                                    <option value="">6 Months</option>
-                                    
-                                </select>
-
-                                <span class="error-message" id="timeline-error"></span>
-
-                            </div>
-
-                        </div>
-
-                        <!-- Audience Section -->
-
-                        <div class="form-group-section">
-
-                            <h2 class="section-label" >Audience</h2>
-
-                            <div class="form-group">
-
-                                <label for="target-audience">Target Audience</label>
-                                <input type="textarea" id="target-audience" name="target-audience" rows="4" placeholder="Who your campaign is for. Demographics" required/>
-                                <span class="error-message" id="target-audience-error"></span>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="geographic-focus">Geographic Focus</label>
-                                <input type="text" id="geographic-focus" name="geographic-focus" placeholder="Targeting area: local, region, nationa, global." required/>
-                                <span class="error-message" id="geographic-focus-error"></span>
-
-                            </div>
-
-
-                        </div>
-
-                        <!-- Strategy Section -->
-
-                        <div class="form-group-section">
-
-                            <h2 class="section-label" >Strategy</h2>
-
-                            <div class="form-group">
-
-                                <label for="objectives">Objectives</label>
-                                <input type="textarea" id="objectives" name="objectives" rows="4" placeholder="Purpose of campaign as it relates to overall goal." required/>
-                                <span class="error-message" id="objectives-error"></span>
-
-                            </div>
-
-                            <div class="form-group">
-
-                                <label for="goals">Goals</label>
-                                <input type="textarea" id="goals" name="goals" rows="4" placeholder="What you are trying to accomplish overall." required/>
-                                <span class="error-message" id="goals-error"></span>
-
-                            </div>
-
-                            <fieldset class="checkbox-group">
-
-                                <legend>Tone & Voice</legend>
-
-                                <input type="checkbox" id="bold" name="bold" value="bold"/>
-                                <label for="bold">Bold</label>
-
-                                <input type="checkbox" id="minimal" name="minimal" value="minimal"/>
-                                <label for="minimal">Minimal</label>
-
-                                <input type="checkbox" id="playful" name="playful" value="playful"/>
-                                <label for="playful">Playful</label>
-
-                                <input type="checkbox" id="elevated" name="elevated" value="elevated"/>
-                                <label for="elevated">Elevated</label>
-
-                                <input type="checkbox" id="urgent" name="urgent" value="urgent"/>
-                                <label for="urgent">Urgent</label>
-
-                                <input type="checkbox" id="conversationl" name="conversational" value="conversational"/>
-                                <label for="conversational">Converstaional</label>                              
-                                
-                            </fieldset>
-
-                            <span class="error-message" id="tone-error"></span>
-
-                        </div>
-
-                        <!-- Scope Section -->
-
-                        <div class="form-group-section">
-
-                            <h2 class="section-label" >Scope</h2>
-
-                            <fieldset class="checkbox-group">
-
-                                <legend>Key Deliverables</legend>
-
-                                <input type="checkbox" id="social-assets" name="social-assets" value="social-assets"/>
-                                <label for="social-assets">Social Assets</label>
-
-                                <input type="checkbox" id="display-banners" name="display-banners" value="display-banners"/>
-                                <label for="display-banners">Display Banners</label>
-
-                                <input type="checkbox" id="email" name="email" value="email"/>
-                                <label for="email">Email</label>
-
-                                <input type="checkbox" id="video" name="video" value="video"/>
-                                <label for="video">Video</label>
-
-                                <input type="checkbox" id="landing-page" name="landing-page" value="landing-page"/>
-                                <label for="landing-page">Landing Page</label>
-
-                                <input type="checkbox" id="print" name="print" value="print"/>
-                                <label for="print">Print</label>                              
-                                
-                            </fieldset>
-
-                            <span class="error-message" id="target-deliverables-error"></span>
-
-
-                            <div class="form-group">
-
-                                <label for="milestones">Milestones</label>
-                                <input type="textarea" id="milestones" name="milestones" rows="5" placeholder="1. Initiation: Key Events - Goal - 2. Planning:... 3. Execution:... 4. Closure:... ." required/>
-                                <span class="error-message" id="milestones-error"></span>
-
-                            </div>
-
-                             <div class="form-group">
-
-                                <label for="additional-information">Additonal Information</label>
-                                <input type="textarea" id="additional-information" name="additional-information" rows="3" placeholder="Optional: additonal information to provide for your brief."/>
-                                <span class="error-message" id="additional-information-error"></span>
-
-                            </div>
-
-                        </div>
-
-                        <button class="form-buttom" type="submit">Generate Brief</button>
-
-                    </form>
+                    <div class="logo-placeholder">Brief.io</div>
 
                 </div>
+                
+                    <div class="builder-body">
 
-            </div>
+                        <h1 class="builder-title">Campaign Brief Builder</h1>
+                        <p class="builder-subtitle">Fill out the fields below to generate your campaign brief.</p>
 
+                        <form id="brief-form" novalidate>
+
+                            <!-- Project Info -->
+
+                            <div class="form-group-section">
+
+                                <h2 class="section-label" >Project Info</h2>
+
+                                <div class="form-group">
+
+                                    <label for="project-name">Project Name</label>
+                                    <input type="text" id="project-name" name="project-name" placeholder="e.g. Q3 Brand Awareness Campaign" required/>
+                                    <span class="error-message" id="project-name-error"></span>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="project-type">Project Type</label>
+
+                                    <select id="project-type" name="project-type" required>
+
+                                        <option value="">Select a type...</option>
+                                        <option value="campaign">Campaign</option>
+                                        <option value="brand-launch">Brand Launch</option>
+                                        <option value="product-launch">Product Launch</option>
+                                        <option value="content-series">Content Series</option>
+                                        <option value="event">Event</option>
+
+                                    </select>
+
+                                    <span class="error-message" id="project-type-error"></span>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="timeline">Timeline</label>
+
+                                    <select id="timeline" name="timeline" required>
+
+                                        <option value="">Select a timeline...</option>
+                                        <option value="2-weeks">2 Weeks</option>
+                                        <option value="1-month">1 Month</option>
+                                        <option value="3-months">3 Months</option>
+                                        <option value="6-months">6 Months</option>
+                                        
+                                    </select>
+
+                                    <span class="error-message" id="timeline-error"></span>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Audience Section -->
+
+                            <div class="form-group-section">
+
+                                <h2 class="section-label" >Audience</h2>
+
+                                <div class="form-group">
+
+                                    <label for="target-audience">Target Audience</label>
+                                    <textarea id="target-audience" name="target-audience" rows="4" placeholder="Who your campaign is for. Demographics" required></textarea>/>
+                                    <span class="error-message" id="target-audience-error"></span>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="geographic-focus">Geographic Focus</label>
+                                    <input type="text" id="geographic-focus" name="geographic-focus" placeholder="Targeting area: local, region, nationa, global." required/>
+                                    <span class="error-message" id="geographic-focus-error"></span>
+
+                                </div>
+
+
+                            </div>
+
+                            <!-- Strategy Section -->
+
+                            <div class="form-group-section">
+
+                                <h2 class="section-label" >Strategy</h2>
+
+                                <div class="form-group">
+
+                                    <label for="objectives">Objectives</label>
+                                    <textarea id="objectives" name="objectives" rows="4" placeholder="Purpose of campaign as it relates to overall goal." required></textarea>/>
+                                    <span class="error-message" id="objectives-error"></span>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="goals">Goals</label>
+                                    <textarea id="goals" name="goals" rows="4" placeholder="What you are trying to accomplish overall." required></textarea>/>
+                                    <span class="error-message" id="goals-error"></span>
+
+                                </div>
+
+                                <fieldset class="checkbox-group">
+
+                                    <legend>Tone & Voice</legend>
+
+                                    <input type="checkbox" id="bold" name="bold" value="bold"/>
+                                    <label for="bold">Bold</label>
+
+                                    <input type="checkbox" id="minimal" name="minimal" value="minimal"/>
+                                    <label for="minimal">Minimal</label>
+
+                                    <input type="checkbox" id="playful" name="playful" value="playful"/>
+                                    <label for="playful">Playful</label>
+
+                                    <input type="checkbox" id="elevated" name="elevated" value="elevated"/>
+                                    <label for="elevated">Elevated</label>
+
+                                    <input type="checkbox" id="urgent" name="urgent" value="urgent"/>
+                                    <label for="urgent">Urgent</label>
+
+                                    <input type="checkbox" id="conversational" name="conversational" value="conversational"/>
+                                    <label for="conversational">Conversational</label>                              
+                                    
+                                </fieldset>
+
+                                <span class="error-message" id="tone-error"></span>
+
+                            </div>
+
+                            <!-- Scope Section -->
+
+                            <div class="form-group-section">
+
+                                <h2 class="section-label" >Scope</h2>
+
+                                <fieldset class="checkbox-group">
+
+                                    <legend>Key Deliverables</legend>
+
+                                    <input type="checkbox" id="social-assets" name="social-assets" value="social-assets"/>
+                                    <label for="social-assets">Social Assets</label>
+
+                                    <input type="checkbox" id="display-banners" name="display-banners" value="display-banners"/>
+                                    <label for="display-banners">Display Banners</label>
+
+                                    <input type="checkbox" id="email" name="email" value="email"/>
+                                    <label for="email">Email</label>
+
+                                    <input type="checkbox" id="video" name="video" value="video"/>
+                                    <label for="video">Video</label>
+
+                                    <input type="checkbox" id="landing-page" name="landing-page" value="landing-page"/>
+                                    <label for="landing-page">Landing Page</label>
+
+                                    <input type="checkbox" id="print" name="print" value="print"/>
+                                    <label for="print">Print</label>                              
+                                    
+                                </fieldset>
+
+                                <span class="error-message" id="target-deliverables-error"></span>
+
+
+                                <div class="form-group">
+
+                                    <label for="milestones">Milestones</label>
+                                    <textarea id="milestones" name="milestones" rows="5" placeholder="1. Initiation: Key Events - Goal - 2. Planning:... 3. Execution:... 4. Closure:... ." required></textarea>/>
+                                    <span class="error-message" id="milestones-error"></span>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="additional-information">Additonal Information</label>
+                                    <textarea id="additional-information" name="additional-information" rows="3" placeholder="Optional: additonal information to provide for your brief."></textarea>/>
+                                    <span class="error-message" id="additional-information-error"></span>
+
+                                </div>
+
+                            </div>
+
+                            <button class="form-button" type="submit">Generate Brief</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+         
         </section>
 
         <!-- Form Output Section -->
          <section id="output-section">
 
-            <div class="output-actions">
+            <div clas="output-wrapper">
 
-                <button class="regenerate-brief-button">Regenerate Brief</button>
-                <button class="edit-brief-button">Edit Brief</button>
-                
-                <button class="card-view-button">Card View</button>
+                <div class="output-actions">
+
+                    <button class="regenerate-brief-button">Regenerate Brief</button>
+                    <button class="edit-brief-button">Edit Brief</button>
+                    
+                    <button class="card-view-button">Card View</button>
+
+                </div>
 
             </div>
 
